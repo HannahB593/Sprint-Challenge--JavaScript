@@ -46,9 +46,12 @@ The first rule is that when a function is contained in the global scope, the val
 
 The second rule is that if a function is called by a preceding dot, what goes before that is that dot is the object this. If there is a function where you first introduce a var and then in the console log you have this.greeting, the this would point back up to the var that began the function. 
 
-If a constructor function is being used, the 'this' refers to the specific instance of the object that is created and returned by the constructor function. 
+The third rule is that if a constructor function is being used, the 'this' refers to the specific instance of the object that is created and returned by the constructor function. If there are two variables that are assigned a unique object returned by a constructor function, the 'this' inside of a method would point to the object instance that is stored in the variable on which the method is being called. In so many words it's just showing how everything is tied into the function using 'this'.
+
+The fourth rule is that 'this' is explicitly defined when JS's apply or call method is used. Both of those methods allow one to execute a function in a different context. 
 
 5. Why do we need super() in an extended class?
+Well the super keyword is used to access and call funcitons on an object's parent. If you leave out super() in an extended class, you'll get a ReferenceError. you can use it to entail some properties of the class you are extending by using super ();  
 
 
 ## Project Set up
