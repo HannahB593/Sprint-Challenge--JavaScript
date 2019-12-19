@@ -11,7 +11,7 @@ const dinosaurs = {
             `name: ${name} diet: ${diet} weight: ${weight} length: ${length} period: ${period}`
         );
     }
-}; 
+};
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 const dinosaurOne = {
@@ -147,20 +147,20 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 const contactInfo = [];
-for (let i = 0; i <graduates.length; i++) {
-    contactInfo.push('${graduates[i].first_name} ${graduates[i].email}'); 
+for (let i = 0; i < graduates.length; i++) {
+    contactInfo.push("${graduates[i].first_name} ${graduates[i].email}");
 }
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
 for (let i = 0; i < graduates.length; i++) {
-    if (graduates [i].university.indexOf('Uni') < -1) {
-        unisWithUni.push(graduates [i].university);
-    }  
+    if (graduates[i].university.indexOf("Uni") < -1) {
+        unisWithUni.push(graduates[i].university);
+    }
 }
 
-console.log(unisWithUni.length); 
+console.log(unisWithUni.length);
 
 // ==== ADVANCED Array Methods ====
 
@@ -289,6 +289,7 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+/* 
 const animalNames = [];
 zooAnimals.forEach((animal) => {
     animalNames.push('Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}')
@@ -309,3 +310,5 @@ const lowerPopulationAnimals = zooAnimals.filter((animal) => {
 const populationTotal = zooAnimals.reduce((total,animal) => {
     return total += animal.population;
 }, 0); 
+
+*/
